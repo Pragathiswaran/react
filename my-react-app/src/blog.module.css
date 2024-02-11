@@ -1,0 +1,25 @@
+.app{
+    text-align: center;
+    /* margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; */
+}
+
+.card{
+    margin: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc,2px 2px 5px #ccc;
+    width: 30em;
+    display: inline-block;
+}
+
+@media (min-width: 992px){
+    .card{
+        width: 45%;
+        display: inline-block;
+    }
+}
+  
