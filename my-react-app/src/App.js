@@ -6,7 +6,6 @@ import React,{Component} from 'react';
 import { isArrayEmpty } from './utils';
 
 class App extends Component {
-
   state = {
     showBlog:true
   }
@@ -36,18 +35,22 @@ myobj =[
   })
 
   buttons = () =>{
-    this.setState({showBlog:false});
-     console.log(this.showBlog);
+    // let updateState = !this.state.showBlog;
+    this.setState((prevState, prevProps)=>{
+      // console.log(prevProps);
+      return{showBlog: !prevState.showBlog}
+    });
+     console.log(this.state.showBlog);
   }
 
 render() {
   return (
     <div className={classes.app}>
-     <button onClick={this.buttons}>submit</button>
+     <button className={classes.btn}onClick={this.buttons}>{this.state.showBlog ? "Hide Blogs" : "Show Blogs"}</button>
       <br></br>
       {
-        // this.setState.showBlog === true ? this.blow : null
-        this.blow
+        this.state.showBlog ? this.blow : null
+        // this.blow
       }
     </div>
   );
