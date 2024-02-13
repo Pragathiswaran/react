@@ -1,0 +1,62 @@
+.productData{
+    width: 100%;
+  }
+  
+  .productTitle{
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  
+  .productDiscription{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  
+  .productImage{
+    width: 100%;
+    max-width: 80px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-right:12px ;
+  }
+  
+  .selectedproductImage{
+    border: 2px solid teal;
+  }
+  
+  .selection{
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  
+  .featureTime{
+    min-width: 80px;
+    background-color: gainsboro;
+    border-radius: 8px;
+    border: 0;
+    padding: 12px 24px;
+    text-align: center;
+    margin-right: 12px;
+    cursor: pointer;
+    box-sizing: content-box;
+  }
+  
+  .selectedfeatureTime{
+    color: white;
+    background-color: grey;
+  }
+  
+  .buyNow{
+    background-color: teal;
+    color: white;
+    border: 0;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 36px;
+  }

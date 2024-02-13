@@ -6,10 +6,13 @@ import React,{Component} from 'react';
 import { isArrayEmpty } from './utils';
 
 class App extends Component {
-  state = {
+  constructor(props){
+    super(props);
+    
+ this.state = {
     showBlog:true
   }
-state = {
+this.state = {
   myobj:[
       {
         id:1,
@@ -31,6 +34,8 @@ state = {
       }
     ]
 };
+console.log("constructor called");
+  }
 
 
   onClickCount = (pos) => {
@@ -53,8 +58,26 @@ state = {
     //  console.log(this.state.showBlog);
   }
 
+  componentDidMount(){
+    console.log("componentDidMount called");
+  }
+
+  shouldComponentUpdate(){
+    console.log("shouldcomponentDidUpdate called");
+    return true;
+  }
+   componentWillUnmount(){
+    console.log("componentWillUnmount called");
+   }
+
+   componentDidUpdate(){
+    console.log("componentDidUpdate called");
+   
+   }
+
 render() {
 
+  console.log("render called");
   // console.log(this.state)
 
  const blow = isArrayEmpty(this.state.myobj) ? [] : this.state.myobj.map((e,pos)=>{

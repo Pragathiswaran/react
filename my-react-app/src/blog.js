@@ -1,26 +1,34 @@
 import React from "react";
 
-import { dumplogs } from "./utils";
+// import { dumplogs } from "./utils";
 
 import classes from "./blog.module.css";
 
-const blog = (props) => {
+class blog extends React.Component {
     // onCountLike = () =>{
     //     this.setState((prevState, prevProps)=>{
     //         return {likeCount: prevState.likeCount + 1}
     //     });
     // }
 
-    dumplogs(props);
-    return(
-        <div className={classes.card}>
-            <h2>{props.id}.{props.title}</h2>
-            <p>{props.discription}</p>
+    // dumplogs(props);
 
-            <p>like count :<span>{props.likecount}</span></p>
-            <button onClick={props.onClickCounted}>Like</button>
-        </div>
-    )
+    // console.log("blog rendered")
+componentWillUnmount(){
+    console.log("Blog component will unmount");
+}
+    render(){
+        return(
+            <div className={classes.card}>
+                <h2>{this.id}.{this.title}</h2>
+                <p>{this.discription}</p>
+    
+                <p>like count :<span>{this.likecount}</span></p>
+                <button onClick={this.onClickCounted}>Like</button>
+            </div>
+        )
+    }
+    
 }
 
 export default blog;

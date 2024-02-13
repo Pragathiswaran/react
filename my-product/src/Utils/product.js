@@ -1,6 +1,6 @@
 
 
-const product = [{
+const Product = {
     title: 'FitBit 19 - The Smartest Watch',
     description: 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.',
     colorOptions: [
@@ -26,6 +26,5 @@ const product = [{
     ]
 }
 
-]
-// Object.freeze(product);
-export default product;
+Object.freeze(Product);
+export default Product;
