@@ -6,7 +6,7 @@ const isArrayEmpty = (arr) =>{
 }
 
 const dumplogs = (msg) =>{
-    console.log(msg);
+    // console.log(msg);
 }
 
 export {isArrayEmpty,dumplogs};

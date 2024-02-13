@@ -4,15 +4,23 @@ import { dumplogs } from "./utils";
 
 import classes from "./blog.module.css";
 
-const blog = (pro) => {
-    // console.log(pro);
-    dumplogs(pro);
+const blog = (props) => {
+    // onCountLike = () =>{
+    //     this.setState((prevState, prevProps)=>{
+    //         return {likeCount: prevState.likeCount + 1}
+    //     });
+    // }
+
+    dumplogs(props);
     return(
         <div className={classes.card}>
-            <h2>{pro.id}.{pro.title}</h2>
-            <p>{pro.discription}</p>
+            <h2>{props.id}.{props.title}</h2>
+            <p>{props.discription}</p>
+
+            <p>like count :<span>{props.likecount}</span></p>
+            <button onClick={props.onClickCounted}>Like</button>
         </div>
     )
-};
+}
 
 export default blog;
