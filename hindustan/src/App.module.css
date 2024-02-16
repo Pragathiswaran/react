@@ -1,38 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+*{
     font-family: 'Kanit', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: white;
-}
-.container {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    padding-top: 12px;
-    padding-bottom: 13px;
+}.container {
+    position: absolute;
     z-index: 1000;
-  }
-  .TopList {
-    display: flex;
-    justify-content: center;
+    background-color: black;
+    width: 100%;
   }
   .Topcontainer{
     display: flex;
     justify-content: center;
+    margin-top: 8px;
   }
-
-  .Topcontainer > div{
-    padding-right: 4em;
+  .Topcontainer > div {
+    padding: 0px 35px;
+    padding-bottom: .7em;
+  }
+  .Topcontainer > div > a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    opacity: 1;
   }
 
   .TopList a {
     text-decoration: none;
     color: white;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: .3px;
     opacity: 1;
   }
@@ -42,6 +42,7 @@ body{
     z-index: 1000;
     background-color: white;
     height: 80px;
+    padding: 11px 9em 20px 9em;
 }
 
 .logobox{
@@ -49,14 +50,13 @@ body{
     justify-content: space-between;
 }
 .logo{
-    width: 16em;
-    height: 15em;
+    width: 17em;
 }
 
 .menuWrapper{
     display: flex;
     justify-content: space-between;
-    z-index: 1000;
+    /* z-index: 1000; */
     background-color: white;
     height: 40px;
     margin-left: 190px;
@@ -79,44 +79,8 @@ body{
     text-align: center; 
 }
 
-.title{
-  align-items: center;
-  padding-left: 12em;
-  max-width:40%;
-  margin-top: -60px;
-  /* background-color: aqua; */
+section{
+  margin-top: 30%;
+  position: absolute;
+
 }
-  .titleWords{
-    font-size: 56px;
-    font-weight: 900;
-    line-height: 2em;
-    word-spacing: 2.5em;
-  }
-
-  .titleText{
-    margin-top: -50px;
-    line-height: 2em;
-    font-size:20px;
-    font-weight: 400;
-    word-spacing: 3px;
-    margin-bottom: 40px;
-  }
-
-  .Links{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-
-.linklogo{
-  display: flex;
-  align-items: center;
-}
-
-.linklogo > img{
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
-

@@ -4,17 +4,16 @@ import classes from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className={classes.App}>
         <nav>
           <div className={classes.container}>
-            <div className={classes.TopList}>
+            {/* <div className={classes.NavContainer}> */}
               <div className={classes.Topcontainer}>
                 <div>
                   <a href="#">Academics</a>
                 </div>
                 <div>
-                  <a href="#">Academics 2024</a>
+                  <a href="#">Admission 2024</a>
                 </div>
                 <div>
                   <a href="#">Research</a>
@@ -31,13 +30,12 @@ function App() {
                 <div>
                   <a href="#">Careers</a>
                 </div>
-              </div>
-              <div>
+                <div className={classes.searchicon}>
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
               </div>
+            {/* </div> */}
             </div>
-          </div>
-          <div className={classes.logoContainer}>
+            <div className={classes.logoContainer}>
             <div className={classes.logobox}>
             <div className={classes.logo}>
               <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
@@ -49,9 +47,11 @@ function App() {
             </div>
             </div>
           </div>
+          </div>
+          
         </nav>
-        <section>
-          <div className={classes.title}>
+        <div className={classes.content}>
+          {/* <div className={classes.title}>
             <div className={classes.titleWords}>
                <h1>Igniting  minds <span>statewide</span></h1>
             </div>
@@ -75,9 +75,9 @@ function App() {
                 <img src="" />
               </div>
             </div>
-          </div>
-        </section>
-      </header>
+          </div> */}
+          <h1>hello world</h1>
+        </div>
     </div>
   );
 }
