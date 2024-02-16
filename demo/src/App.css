@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.slider-container {
+  overflow: hidden;
+  height: 300px; /* Set the desired height of your slider */
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.slide.active {
+  opacity: 1;
+}

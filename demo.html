@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Image Scroll</title>
+    <style>
+        body{
+            min-height: 100vh;
+            display: grid;
+            place-items: center;           
+        }
+
+        .container{
+            height: 250px;
+            margin: auto;
+            width: 270px;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+            background-color: beige;
+        }
+        .scrolling-images{
+            display: flex;
+            flex-direction: column;
+            height: calc(200px * 18); /* Adjust the height based on the number of slides */
+            overflow: hidden;
+            animation: scroll 30s linear infinite;
+        }
+        
+        .slide{
+            height: 30px;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            perspective: 100px;
+        }
+
+        img{
+            width: 100%;
+            transition: transform 1000s;
+        }
+
+        img:hover{
+            transform: translateY(20px);
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(calc(-200px * 17));
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="scrolling-images">
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+
+            <div class="slide">
+                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
