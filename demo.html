@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vertical Image Scroll</title>
     <style>
-        body{
+        body {
             min-height: 100vh;
             display: grid;
             place-items: center;           
         }
 
-        .container{
+        .container {
             height: 250px;
             margin: auto;
             width: 270px;
@@ -20,15 +20,16 @@
             overflow: hidden;
             background-color: beige;
         }
-        .scrolling-images{
+
+        .scrolling-images {
             display: flex;
             flex-direction: column;
-            height: calc(200px * 18); /* Adjust the height based on the number of slides */
+            height: calc(200px * 18);
             overflow: hidden;
             animation: scroll 30s linear infinite;
         }
-        
-        .slide{
+
+        .slide {
             height: 30px;
             width: 50px;
             display: flex;
@@ -37,12 +38,12 @@
             perspective: 100px;
         }
 
-        img{
+        img {
             width: 100%;
             transition: transform 1000s;
         }
 
-        img:hover{
+        img:hover {
             transform: translateY(20px);
         }
 
@@ -54,86 +55,20 @@
                 transform: translateY(calc(-200px * 17));
             }
         }
-       
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="scrolling-images">
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-
-            <div class="slide">
-                <img src="https://hindustanuniv.ac.in/assets/image/new-logo.svg" alt="logo" />
-            </div>
-            
-            
+        <div class="scrolling-images" id="scrollingImages">
+            <!-- ... your image slides go here ... -->
         </div>
     </div>
+
+    <script>
+        // Trigger the scrolling animation when the page loads
+        window.addEventListener('load', function () {
+            document.getElementById('scrollingImages').classList.add('scrolling');
+        });
+    </script>
 </body>
 </html>

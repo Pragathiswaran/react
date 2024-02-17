@@ -1,21 +1,26 @@
-import React from 'react';
-import './vertical.css'; // Create a separate CSS file for styling
+import React, { useEffect, useState } from 'react';
+import './App.css'; // Assuming you have a CSS file for styling
 
-const VerticalScroll = () => {
+const App = () => {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    // Set scrolling to true when the component mounts
+    setScrolling(true);
+
+    // Clean up the effect by setting scrolling to false when the component unmounts
+    return () => {
+      setScrolling(false);
+    };
+  }, []);
+
   return (
-    <div className="container">
-      <div className="scrolling-images">
-        {[1, 2, 3, 4, 5].map((index) => (
-          <div key={index} className="slide">
-            <img
-              src={`https://hindustanuniv.ac.in/assets/image/new-logo.svg`}
-              alt={`logo-${index}`}
-            />
-          </div>
-        ))}
+    <div className="app">
+      <div className={`scrolling-text ${scrolling ? 'scrolling' : ''}`}>
+        This is some scrolling text.
       </div>
     </div>
   );
 };
 
-export default VerticalScroll;
+export default App;

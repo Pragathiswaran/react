@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+// import './App.css';
+import VerticalSlider from './vertical';
 
 function App() {
   return (
     <div className="App">
-      <h1>Vertical Slider</h1>
       <VerticalSlider />
     </div>
   );

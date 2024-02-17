@@ -1,0 +1,48 @@
+.NavBar{
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+   } 
+   .TopBarContainer{
+     display: flex;
+     justify-content: space-between; 
+     padding-left: 160px;
+     padding-right: 160px;
+     padding-top: 6px;
+     padding-bottom: 8px;
+   }
+   .TopBar{
+     background-color:black;
+     width: 100%;
+   }
+   
+   .TopBar a{
+       color: white;
+       text-decoration: none;
+       font-size: 16px;
+       font-weight: 500;
+   }
+   
+   .BottomBar{
+     display: flex;
+     justify-content: space-between;
+     padding-left: 140px;
+     padding-right: 140px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     background-color: white;
+   }
+   
+   .BottomBar img{
+       width: 250px;
+   }
+   
+   .BottomBar i{
+     padding: 15px;
+     font-size: 20px;
+     background-color: black;
+     color: white;
+     border-radius: 50%;
+   }
