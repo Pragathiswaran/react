@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logos{
+    height: 600px;
+    width: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.logos-slide{
+    animation: 15s slide infinite linear;
+    scroll-behavior: smooth ;
+}
+
+.down{
+    animation: 15s slidedown infinite linear;
+    scroll-behavior: smooth ;
+}
+
+.logos-slide > img{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 180px;
+    padding-top: 20px;
+    border-radius: 15px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slidedown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(-0%);
+    }
+}

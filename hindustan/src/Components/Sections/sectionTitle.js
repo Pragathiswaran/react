@@ -27,9 +27,9 @@ const SectionTitle = () => {
             <div className={classes.ImageSliderContainer}>
                   <marquee behaviour="scroll" direction="up" scrollamount="20">
                   <div className={classes._ImageSlide}></div>
+                    {/* <div className={classes._ImageSlide}></div>
                     <div className={classes._ImageSlide}></div>
-                    <div className={classes._ImageSlide}></div>
-                    <div className={classes._ImageSlide}></div>
+                    <div className={classes._ImageSlide}></div> */}
                   </marquee>
             </div>
             </div>

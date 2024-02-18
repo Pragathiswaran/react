@@ -4,71 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vertical Image Scroll</title>
-    <style>
-        body {
-            min-height: 100vh;
-            display: grid;
-            place-items: center;           
-        }
-
-        .container {
-            height: 250px;
-            margin: auto;
-            width: 270px;
-            display: grid;
-            place-items: center;
-            overflow: hidden;
-            background-color: beige;
-        }
-
-        .scrolling-images {
-            display: flex;
-            flex-direction: column;
-            height: calc(200px * 18);
-            overflow: hidden;
-            animation: scroll 30s linear infinite;
-        }
-
-        .slide {
-            height: 30px;
-            width: 50px;
-            display: flex;
-            align-items: center;
-            padding: 5px;
-            perspective: 100px;
-        }
-
-        img {
-            width: 100%;
-            transition: transform 1000s;
-        }
-
-        img:hover {
-            transform: translateY(20px);
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(calc(-200px * 17));
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
-        <div class="scrolling-images" id="scrollingImages">
-            <!-- ... your image slides go here ... -->
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+            </div>
+            <div class="logos-slide">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+            </div>
+        </div>
+        <div class="logos">
+            <div class="logos-slide down">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+            </div>
+            <div class="logos-slide down">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+            </div>
+        </div>
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+            </div>
+            <div class="logos-slide">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="">
+            </div>
         </div>
     </div>
-
-    <script>
-        // Trigger the scrolling animation when the page loads
-        window.addEventListener('load', function () {
-            document.getElementById('scrollingImages').classList.add('scrolling');
-        });
-    </script>
 </body>
 </html>
