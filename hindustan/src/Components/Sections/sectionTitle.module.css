@@ -49,21 +49,65 @@ section{
     bottom: 5px;
     left: 10px;
   }
-  .SectionBottomContainer img{
+  .SectionBottomContainer > img{
     width: 15%;
   }
   
   .ImageSlider{
-    position: relative;
-    width: 45%;
+  position: relative;
+  width: 50%;
   }
   
   .ImageSliderContainer{
-    justify-content: space-around;
     display: flex;
-    border: 1px solid black;
-    max-height: 70%;
+    justify-content: space-around;
+    width: 100%;
   }
+
+  .logos{
+    height: 600px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.logosSlide{
+    animation: 15s slide infinite linear;
+    scroll-behavior: smooth ;
+}
+
+.down{
+    animation: 15s slidedown infinite linear;
+    scroll-behavior: smooth ;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 180px;
+    padding-top: 20px;
+    border-radius: 15px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slidedown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(-0%);
+    }
+}
   ._ImageSlide{
     display: flex;
     flex-direction: column;
@@ -85,7 +129,7 @@ section{
     padding: 20px;
   }
   
-  .SectionLogoContainer img{
+  .SectionLogoContainer > img{
     width: 130px;
   }
 

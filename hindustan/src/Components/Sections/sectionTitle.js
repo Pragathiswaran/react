@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./sectionTitle.module.css";
 
-const SectionTitle = () => {
+const SectionTitle = (Props) => {
     return(
         <section>
           <div className={classes.Sections}>
@@ -24,14 +24,50 @@ const SectionTitle = () => {
             </div>
           </div>
           <div className={classes.ImageSlider}>
-            <div className={classes.ImageSliderContainer}>
-                  <marquee behaviour="scroll" direction="up" scrollamount="20">
-                  <div className={classes._ImageSlide}></div>
-                    {/* <div className={classes._ImageSlide}></div>
-                    <div className={classes._ImageSlide}></div>
-                    <div className={classes._ImageSlide}></div> */}
-                  </marquee>
+           <div className={classes.ImageSliderContainer}>
+           <div className={classes.logos}>
+            <div className={classes.logosSlide}>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
             </div>
+            <div className={classes.logosSlide}>
+            <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+            </div>
+        </div>
+        <div className={classes.logos}>
+        <div className={`${classes.logoslide} ${classes.down}`}>
+            <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+            </div>
+            <div className={`${classes.logoslide} ${classes.down}`}>
+            <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+            </div>
+        </div>
+        <div className={classes.logos}>
+        <div className={classes.logosSlide}>
+            <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+            </div>
+            <div className={classes.logosSlide}>
+            <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+                <img src="https://api.hindustanuniv.ac.in/uploads/4_200a560d5c.jpg" alt="" className={classes.images}/>
+            </div>
+        </div>
+           </div>
             </div>
          </div>
           <div className={classes.SectionLogo}>

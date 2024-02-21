@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./videoDisplay.module.css";
 
-const VideoDisplay = (props) => {
+const VideoDisplay = (Props) => {
     return(
         <div className={classes.SectionMiddle}>
              <div className={classes.TextScrolling}>
