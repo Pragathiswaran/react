@@ -1,0 +1,108 @@
+body {
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+.weatherApp{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.weatherAppConatiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  width: 30%;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+
+.searchCity{
+  margin-top: 20px;
+  display: flex;
+  justify-content:flex-end;
+}
+.searchCity input{
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 20px;
+  margin-right: 10px;
+  border-radius:6rem;
+  outline: none;
+}
+
+.searchCity button{
+  border-radius:50%;
+  border: none;
+  padding: 20px;
+}
+
+.searchCity button img{
+  width: 16px;
+  height: 16px;
+}
+
+.weatherLogo{
+  width: 100px;
+  height: 100px;
+  margin-top: 60px;
+  text-align: center;
+
+}
+
+.weatherInfo{
+  color: white;
+  text-align: center;
+}
+
+.weatherInfo h1{
+  font-size: 50px;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.weatherInfo h3{
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+.weatherFooter{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.humidity, .wind{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.humidity h3 ,.wind h3{
+  margin-top: 0px;
+  font-weight: 400;
+}
+
+.humidityPercent, .windSpeed{
+  font-size: 30px;
+  margin-top: 0px;
+  font-weight: 400;
+}
