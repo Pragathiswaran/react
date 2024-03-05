@@ -3,16 +3,14 @@ body {
   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 .weatherApp{
-  margin-top: 60px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
 .weatherAppConatiner{
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction:column;
   width: 30%;
@@ -56,11 +54,7 @@ body {
 }
 
 .weatherLogo{
-  width: 100px;
-  height: 100px;
-  margin-top: 60px;
-  text-align: center;
-
+ margin-top: 30px;
 }
 
 .weatherInfo{
@@ -92,7 +86,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   margin-bottom: 30px;
 }
 
@@ -105,4 +99,9 @@ body {
   font-size: 30px;
   margin-top: 0px;
   font-weight: 400;
+}
+
+.humidityLogo, .windLogo{
+  width: 46px;
+  padding-right: 20px;
 }
