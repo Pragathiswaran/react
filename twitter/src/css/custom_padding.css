@@ -1,5 +1,5 @@
 .c-p-l {
-    padding-left: 5.5rem; /* Your custom padding value */
+    padding-left: 5.5rem; 
 }
   
 .custom-image {
@@ -54,4 +54,23 @@
 
 .searchInput{
     background-color: #212121;
+}
+.mt-6{
+    margin-top: 62px;
+}
+
+.w-35{
+    width: 38.8%;
+}
+
+.fs-8{
+    font-size: 14px;
+}
+
+.w-80{
+    width: 90%;
+}
+
+.text-bold{
+    font-weight: 600;
 }

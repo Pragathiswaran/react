@@ -4,7 +4,8 @@ const navbar= () =>{
     return(
         <>
         <div className="c-p-l mt-2 w-20">
-            <div className="pb-2 mt-2">
+           <div className='position-fixed'>
+           <div className="pb-2 mt-2">
                 <img src={images.Tlogo} className="custom-image" />
             </div>
             <div className="d-flex pt-2">
@@ -23,12 +24,13 @@ const navbar= () =>{
                 <button className='btn btn-post'>Post</button>
             </div>
             <div className='text-white pt-5 d-flex'>
-                <div className="h2 p-1">{links.navbar[7].logo}</div>
+                <div className="h2 p-1">{links.navbar[8].logo}</div>
                 <div>
                     <div className="px-5">Pragathiswaran</div>
                     <div className="px-5">@pragathiswaran</div>
                 </div>
             </div>  
+           </div>
         </div>
         </>
     )

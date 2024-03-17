@@ -11,9 +11,9 @@ function App() {
  
   return (
    <>
-   <div className="d-flex justify-content-evenly"> 
+   <div className="d-flex justify-content-around"> 
       <Navbar />
-      <Main />
+        <Main />
       <Search />
    </div>
    </>
