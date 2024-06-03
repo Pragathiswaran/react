@@ -1,6 +1,7 @@
 import {React, useState} from 'react';
-import SaveForm from './components/saveForm.js';
-// import editForm from './components/editForm';
+import SaveForm from './components/addTodoList';
+import EditForm from './components/editTodoList';
+import ListTodo from './components/listTodo';
 import './App.css';
 
 function App() {
@@ -20,11 +21,9 @@ function App() {
   const deleteList = (index)=>{
     todolist.splice(index, 1);
     setTodolist([...todolist]);
-    // console.log(index)
   }
 
   const editList =(index, item)=>{
-    // console.log(index, item)
     setEditTodoListValue(item);
     setEditTodoListIndex(index);
     setEditToDoList(true)
@@ -32,46 +31,22 @@ function App() {
 
   const updatedList = (e)=>{
     e.preventDefault();
-    // console.log(editTodoListValue)
     todolist.splice(editTodoListIndex,1,editTodoListValue)
     setEditToDoList(false)
   }
   return (
     <>
-    <div className=''>
-      <h1>Todo List</h1>
+    <div class='flex justify-center'>
+      <h1 class=''>Todo List</h1>
       {!editTodoList &&
-      <SaveForm 
-      addList={addList}
-       task={task}
-       setTask={setTask}
-      />
-    }
-    {editTodoList &&
-      <form onClick={()=>updatedList}>
-        <input type='text' 
-          placeholder='Add a task' 
-          value={editTodoListValue} 
-          onChange={(e)=>{setEditTodoListValue(e.target.value)}}/>
-        <button type='button'>Save</button>
-      </form>
-    }
+        <SaveForm addLists={addList} tasks={task} setTasks={setTask}/>
+      }
+      {editTodoList &&
+        <EditForm updatedList={updatedList} editTodoListValue={editTodoListValue} setEditTodoListValue={setEditTodoListValue}
+        />
+      }
       <ul>
-        {
-          todolist.map((item, index)=>{
-            // console.log(index)
-            return(
-
-              <li key={index}>
-                <input type='checkbox'/>
-                {item}
-                <button onClick={()=>{editList(index,item)}}>edit</button>
-                <button onClick={()=>{deleteList(index)}}>del</button>
-              </li>
-            )
-          }
-          )
-        }
+        <ListTodo todolist={todolist} editList={editList} deleteList={deleteList}/>
       </ul>
     </div>
     

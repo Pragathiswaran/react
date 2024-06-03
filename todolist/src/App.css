@@ -1,0 +1,12 @@
+/* src/tailwind.css */
+/* Reset default styles */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+  /* Apply Tailwind CSS styles */
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
