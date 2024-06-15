@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #f3f4f6;
+    /* display: inline;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: -.003em;
+    line-height: 1.0834933333 */
+}
