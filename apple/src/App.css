@@ -1,0 +1,9 @@
+.card:hover {
+    /* border-color: #008bf8; */
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+
+   .card:hover{
+    transform: translate(1%, 1%);
+    /* opacity: 0.1; */
+   }

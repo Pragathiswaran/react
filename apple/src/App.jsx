@@ -5,7 +5,8 @@ import WorkOutlineRoundedIcon from '@mui/icons-material/WorkOutlineRounded';
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
-import products from './contents/products';
+import {Products, Card} from './contents/products';
+import './App.css';
 
 function App() {
   return (
@@ -66,7 +67,7 @@ function App() {
       </aside>
       <aside className='mt-20 flex gap-2'>
         {
-          products.map((item,index)=>(
+          Products.map((item,index)=>(
             <div className='w-36' key={index}>
           <img src={item.image}
             height='130px' width='130px'/>
@@ -79,20 +80,42 @@ function App() {
         <div className='text-2.5xl font-semibold font-sans'>
           <h3>The latest.<span>Take a look at what's new right now.</span></h3>
         </div>
-        <div className='mt-3 w-1/2 inline-block '>
-        <div className='absolute p-6'>
-          <h5>hello</h5>
-          <h2>NewPhoria</h2>
-          <h4>From ₹3320.</h4>
+        <div className='mt-3 inline-flex'>
+          {
+            Card.map((item,index)=>(
+              <div className='relative hover:shadow-xl translate-1' key={index}>
+                <div className='absolute p-6'>
+                  <h5 className='text-xs'>{item.name}</h5>
+                  <h2 className='text-2xl font-semibold mt-3'>{item.des}</h2>
+                  <h4 className='mt-4 text-md w-3/4'>{item.cost}</h4>
+                </div>
+                <div className='max-w-[400px] rounded-3xl '>
+                <img
+                  className='w-full h-full rounded-3xl'
+                  src={item.image}
+                  alt='not found'
+                />
+                </div>
+            </div>
+            ))
+          }
+        
         </div>
-            <img className='w-4/6 h-4/5 rounded-3xl tease-in duration-300' 
-                 src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-macbook-air-202402?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1707259289595"
-            />
+      </aside>
+      <aside>
+        <div>
+          <p>Help is here.<span>Whenever and However you need it.</span></p>
+        </div>
+        <div>
+          <h5>Apple Specialist</h5>
+          <h3>Shop one on one with a Specialist Online.</h3>
+        </div>
+        <div>
+          <img src='https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-50-earth-day-specialist-help-202404?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=1711397327979'
+          width="500px"/>
         </div>
       </aside>
       </section>
-      {/*  */}
-      
     </>
   );
 }

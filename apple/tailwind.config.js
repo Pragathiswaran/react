@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      maxWidth:{
+        '400':"400px",
+      },
       fontFamily:{
         sans:['SF Pro Display','SF Pro Icons','Helvetica Neue','Helvetica','Arial','sans-serif']
       },
